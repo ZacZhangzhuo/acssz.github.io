@@ -6,7 +6,7 @@ import AppAppBar from "../components/AppAppBar.js";
 import Hero from "../components/Hero.js";
 import LogoCollection from "../components/LogoCollection.js";
 import Highlights from "../components/Highlights.js";
-import Pricing from "../components/Pricing.js";
+import Manual from "../components/Manual.js";
 import Features from "../components/Features.js";
 import Testimonials from "../components/Testimonials.js";
 import FAQ from "../components/FAQ.js";
@@ -23,13 +23,15 @@ export function meta() {
 	];
 }
 
-export default function Home() {
+export default function Home(props: { disableCustomTheme?: boolean }) {
 	return (
-		<AppTheme disableCustomTheme={false}>
+		<AppTheme {...props}>
 			<CssBaseline enableColorScheme />
 			<AppAppBar />
 			<Hero />
 			<div>
+				<Manual />
+				<FAQ />
 				<LogoCollection />
 				<Features />
 				<Divider />
@@ -37,9 +39,7 @@ export default function Home() {
 				<Divider />
 				<Highlights />
 				<Divider />
-				<Pricing />
 				<Divider />
-				<FAQ />
 				<Divider />
 				<Footer />
 			</div>

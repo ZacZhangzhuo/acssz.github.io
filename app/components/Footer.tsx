@@ -11,14 +11,14 @@ import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/X';
-import SitemarkIcon from './SitemarkIcon';
+import Icon from './Icon';
 
 function Copyright() {
   return (
     <Typography variant="body2" sx={{ color: 'text.secondary', mt: 1 }}>
       {'Copyright © '}
       <Link color="text.secondary" href="https://mui.com/">
-        Sitemark
+        Icon
       </Link>
       &nbsp;
       {new Date().getFullYear()}
@@ -55,7 +55,7 @@ export default function Footer() {
           }}
         >
           <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
-            <SitemarkIcon />
+            <Icon />
             <Typography variant="body2" gutterBottom sx={{ fontWeight: 600, mt: 2 }}>
               Join the newsletter
             </Typography>
@@ -111,7 +111,7 @@ export default function Footer() {
             Highlights
           </Link>
           <Link color="text.secondary" variant="body2" href="#">
-            Pricing
+            Manual
           </Link>
           <Link color="text.secondary" variant="body2" href="#">
             FAQs
