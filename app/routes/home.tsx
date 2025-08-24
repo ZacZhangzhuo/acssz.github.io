@@ -1,24 +1,48 @@
 import * as React from "react";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import Link from "@mui/material/Link";
-import { Link as ReactRouterLink } from "react-router";
-import ProTip from "~/components/ProTip";
-import Copyright from "~/components/Copyright";
-
-import MarketingPage from "./MarketingPage.tsx";
+import CssBaseline from "@mui/material/CssBaseline";
+import Divider from "@mui/material/Divider";
+import AppTheme from "../shared-theme/AppTheme.tsx";
+import AppAppBar from "../components/AppAppBar.js";
+import Hero from "../components/Hero.js";
+import LogoCollection from "../components/LogoCollection.js";
+import Highlights from "../components/Highlights.js";
+import Pricing from "../components/Pricing.js";
+import Features from "../components/Features.js";
+import Testimonials from "../components/Testimonials.js";
+import FAQ from "../components/FAQ.js";
+import Footer from "../components/Footer.js";
 
 export function meta() {
 	return [
-		{ title: "Material UI - React Router example in TypeScript" },
+		{ title: "ACSSZ" },
 		{
-			name: "description",
-			content: "Welcome to Material UI - React Router example in TypeScript!",
+			name: "ACSSZ",
+			content:
+				"Association of Chinese Students and Scholars in Zurich (ACSSZ) Founded in the 1980s, it is a caring family of local students and scholars.",
 		},
 	];
 }
 
 export default function Home() {
-	return <MarketingPage></MarketingPage>;
+	return (
+		<AppTheme disableCustomTheme={false}>
+			<CssBaseline enableColorScheme />
+			<AppAppBar />
+			<Hero />
+			<div>
+				<LogoCollection />
+				<Features />
+				<Divider />
+				<Testimonials />
+				<Divider />
+				<Highlights />
+				<Divider />
+				<Pricing />
+				<Divider />
+				<FAQ />
+				<Divider />
+				<Footer />
+			</div>
+		</AppTheme>
+	);
 }
