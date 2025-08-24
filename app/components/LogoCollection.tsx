@@ -5,12 +5,12 @@ import Grid from "@mui/material/Grid";
 import { useColorScheme } from "@mui/material/styles";
 
 const logos = [
-	"public/partners/1.png",
-	"public/partners/2.jpg",
-	"public/partners/3.jpeg",
-	"public/partners/4.jpeg",
-	"public/partners/5.png",
-	"public/partners/6.jpg",
+	"partners/1.png",
+	"partners/2.jpg",
+	"partners/3.jpeg",
+	"partners/4.jpeg",
+	"partners/5.png",
+	"partners/6.jpg",
 ];
 
 const logoStyle = {
@@ -25,7 +25,7 @@ export default function LogoCollection() {
 	const { mode, systemMode } = useColorScheme();
 
 	return (
-		<Box id="logoCollection" sx={{ pt: { xs: 4, sm: 12 }, pb: { xs: 0, sm: 0 } }}>
+		<Box id="logoCollection" sx={{ pt: { xs: 2, sm: 6 }, pb: { xs: 0, sm: 0 }, background: "white" }}>
 			<Typography
 				component="h2"
 				variant="h4"

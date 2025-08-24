@@ -8,8 +8,12 @@ import Typography from "@mui/material/Typography";
 import EmailIcon from "@mui/icons-material/Email";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import Grid from "@mui/material/Grid";
+import { useColorScheme } from "@mui/material/styles";
 
 export default function Footer() {
+	const { mode, systemMode, setMode } = useColorScheme();
+	const darkMode = ((systemMode || mode) as "light" | "dark") === "dark";
+
 	return (
 		<Container
 			sx={{
@@ -25,8 +29,8 @@ export default function Footer() {
 			<Typography component="h2" variant="h4">
 				Contact Us
 			</Typography>
-			<Grid spacing={2} sx={{ alignSelf: "center" }}>
-				<img src="public/media/QRcode.jpg" style={{ width: "50%" }}></img>
+			<Grid container spacing={2} sx={{ alignSelf: "center" }}>
+				<img src="media/QRcode.jpg" style={{ width: "50%" }}></img>
 
 				<Stack
 					direction="row"
@@ -59,7 +63,11 @@ export default function Footer() {
 						aria-label="WeiBo"
 						sx={{ alignSelf: "center" }}
 					>
-						<img src="public/icons/weibo.png" alt="WeiBo" style={{ width: "60%", height: "60%" }} />
+						<img
+							src={darkMode ? "icons/weibo-w.png" : "icons/weibo.png"}
+							alt="WeiBo"
+							style={{ width: "60%", height: "60%" }}
+						/>
 					</IconButton>
 					<IconButton
 						color="inherit"
@@ -68,7 +76,11 @@ export default function Footer() {
 						aria-label="XiaoHongShu"
 						sx={{ alignSelf: "center" }}
 					>
-						<img src="public/icons/xiaohongshu.png" alt="WeiBo" style={{ width: "120%", height: "120%" }} />
+						<img
+							src={darkMode ? "icons/xiaohongshu-w.png" : "icons/xiaohongshu.png"}
+							alt="WeiBo"
+							style={{ width: "120%", height: "120%" }}
+						/>
 					</IconButton>
 				</Stack>
 			</Grid>

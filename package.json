@@ -21,6 +21,7 @@
     "isbot": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-material-ui-carousel": "^3.4.2",
     "react-router": "latest"
   },
   "devDependencies": {

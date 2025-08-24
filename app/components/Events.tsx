@@ -14,32 +14,32 @@ const items = [
 	{
 		name: "Career Insights 2025 - Job hunting and work permit in Switzerland",
 		event: "Are you currently job hunting in Switzerland and facing challenges? What are the key steps to securing a work permit and staying in Switzerland? How can you optimize your resume and prepare effectively for interviews to increase your chances of success?",
-		image: "public/media/Career_Insights.webp",
+		image: "media/Career_Insights.webp",
 	},
 	{
 		name: "Global Village - Embrace Diversity",
 		event: "🌏✨ Today, we joined AIESEC Zurich at “Global Village - Embrace Diversity” at the University of Zurich, Lichthof! Our team loved sharing a bit of Chinese culture—guests got to try on Hanfu, practice calligraphy, and make bubble tea 🍵✍️💫",
-		image: "public/media/Global_Village.webp",
+		image: "media/Global_Village.webp",
 	},
 	{
 		name: "China and Switzerland Culture Talk",
 		event: "At the beginning of 2020, the Switzerland-China Bridge Association and the Zurich Federation of Students jointly held a Sino-Swiss cultural exchange activity. The event featured Swiss musicians Jason Huster, Anton Zemp and his friends.",
-		image: "public/media/Culture_Talk.jpg",
+		image: "media/Culture_Talk.jpg",
 	},
 	{
 		name: "You are My Destiny | 520 Making Friends",
 		event: "520, wait for you to make friends, say goodbye to single!",
-		image: "public/media/Making_Friends.webp",
+		image: "media/Making_Friends.webp",
 	},
 	{
 		name: "More coming soon...",
 		event: "More events are comings soon!",
-		image: "public/favicon.ico",
+		image: "favicon.ico",
 	},
 	{
 		name: "More coming soon...",
 		event: "More events are comings soon!",
-		image: "public/favicon.ico",
+		image: "favicon.ico",
 	},
 ];
 
