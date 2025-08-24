@@ -11,7 +11,7 @@ import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/X';
-import Icon from './Icon';
+import Icon from './Icon.tsx';
 
 function Copyright() {
   return (

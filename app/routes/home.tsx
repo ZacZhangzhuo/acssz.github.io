@@ -2,15 +2,15 @@ import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import AppTheme from "../shared-theme/AppTheme.tsx";
-import AppAppBar from "../components/AppAppBar.js";
-import Hero from "../components/Hero.js";
-import LogoCollection from "../components/LogoCollection.js";
-import Highlights from "../components/Highlights.js";
-import Manual from "../components/Manual.js";
-import Features from "../components/Features.js";
-import Testimonials from "../components/Testimonials.js";
-import FAQ from "../components/FAQ.js";
-import Footer from "../components/Footer.js";
+import AppAppBar from "../components/AppAppBar";
+import Hero from "../components/Hero";
+import LogoCollection from "../components/LogoCollection";
+import Highlights from "../components/Highlights";
+import Manual from "../components/Manual";
+import Features from "../components/Features";
+import Testimonials from "../components/Testimonials";
+import FAQ from "../components/FAQ";
+import Footer from "../components/Footer";
 
 export function meta() {
 	return [
@@ -23,7 +23,7 @@ export function meta() {
 	];
 }
 
-export default function Home(props: { disableCustomTheme?: boolean }) {
+export default function Home(props: { disableCustomTheme?: boolean } = { disableCustomTheme: true }) {
 	return (
 		<AppTheme {...props}>
 			<CssBaseline enableColorScheme />

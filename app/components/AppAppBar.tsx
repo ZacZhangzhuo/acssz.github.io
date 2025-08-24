@@ -86,7 +86,6 @@ export default function AppAppBar() {
 						<Button color="primary" variant="text" size="small">
 							Member Login
 						</Button>
-
 						<ColorModeIconDropdown />
 					</Box>
 					<Box sx={{ display: { xs: "flex", md: "none" }, gap: 1 }}>
