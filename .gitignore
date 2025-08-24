@@ -1,6 +1,6 @@
-# IDEs
-.idea/
+.DS_Store
+/node_modules/
 
-
-# Mac
-**/.DS_Store
+# React Router
+/.react-router/
+/build/

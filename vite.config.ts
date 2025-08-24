@@ -1,15 +1,19 @@
+import { reactRouter } from "@react-router/dev/vite";
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import tsconfigPaths from "vite-tsconfig-paths";
 
-// https://vitejs.dev/config/
 export default defineConfig({
-	plugins: [react()],
-	esbuild: {
-		supported: {
-			"top-level-await": true, //browsers can handle top-level-await features
+	plugins: [reactRouter(), tsconfigPaths()],
+	ssr: {
+		// Workaround for resolving dependencies in the server bundle
+		// Without this, the React context will be different between direct import and transitive imports in development environment
+		// For more information, see https://github.com/mui/material-ui/issues/45878#issuecomment-2987441663
+		optimizeDeps: {
+			include: ["@emotion/*", "@mui/*"],
 		},
+		noExternal: ["@emotion/*", "@mui/*"],
 	},
-	server: {
-		port: 3000,
+	esbuild: {
+		jsx: "automatic", // Enable automatic JSX runtime
 	},
 });
