@@ -7,7 +7,7 @@ import { Link as ReactRouterLink } from "react-router";
 import ProTip from "~/components/ProTip";
 import Copyright from "~/components/Copyright";
 
-import MarketingPage from "../marketing-page/MarketingPage.tsx";
+import MarketingPage from "./MarketingPage.tsx";
 
 export function meta() {
 	return [
