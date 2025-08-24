@@ -25,7 +25,7 @@ export default function FAQ() {
 			id="faq"
 			sx={{
 				pt: { xs: 4, sm: 12 },
-				pb: { xs: 8, sm: 16 },
+				pb: { xs: 0, sm: 0 },
 				position: "relative",
 				display: "flex",
 				flexDirection: "column",
@@ -57,9 +57,8 @@ export default function FAQ() {
 					</AccordionSummary>
 					<AccordionDetails>
 						<Typography variant="body2" gutterBottom sx={{ maxWidth: { sm: "100%", md: "70%" } }}>
-							You can reach our customer support team by emailing&nbsp;
-							<Link href="mailto:support@email.com">support@email.com</Link>
-							&nbsp;or calling our toll-free number. We&apos;re here to assist you promptly.
+							Visa application, Luggage preparation, Domestic bank / card-related matters, Domestic mobile
+							phone and SIM card, Flight tickets...
 						</Typography>
 					</AccordionDetails>
 				</Accordion>
@@ -70,13 +69,16 @@ export default function FAQ() {
 						id="panel2d-header"
 					>
 						<Typography component="span" variant="subtitle2">
-							Can I return the product if it doesn&apos;t meet my expectations?
+							What are the steps for finding accommodation in Zurich?
 						</Typography>
 					</AccordionSummary>
 					<AccordionDetails>
 						<Typography variant="body2" gutterBottom sx={{ maxWidth: { sm: "100%", md: "70%" } }}>
-							Absolutely! We offer a hassle-free return policy. If you&apos;re not completely satisfied,
-							you can return the product within [number of days] days for a full refund or exchange.
+							Step 1: Search for suitable accommodation through various channels, apply to view the
+							property and submit a rental application according to the process for each channel (see
+							below for details). Step 2: Once the landlord/agent has accepted your application, sign a
+							rental contract with the landlord/agent. If the landlord does not accept your application,
+							return to step 1. Step 3: Complete the handover of the property and move in.
 						</Typography>
 					</AccordionDetails>
 				</Accordion>
@@ -87,14 +89,33 @@ export default function FAQ() {
 						id="panel3d-header"
 					>
 						<Typography component="span" variant="subtitle2">
-							What makes your product stand out from others in the market?
+							How much does it cost to live in Zurich?
 						</Typography>
 					</AccordionSummary>
 					<AccordionDetails>
 						<Typography variant="body2" gutterBottom sx={{ maxWidth: { sm: "100%", md: "70%" } }}>
-							Our product distinguishes itself through its adaptability, durability, and innovative
-							features. We prioritize user satisfaction and continually strive to exceed expectations in
-							every aspect.
+							Generally, monthly expenses range from 1,500 to 2,000 Swiss francs, with no upper limit:
+							Fixed expenses: rent, insurance, telephone bills, transportation costs, etc. If you live in
+							a student dormitory (e.g., Woko, Juwo, WFSS), rent typically ranges from 500 to 800 Swiss
+							Francs, which is relatively affordable. If you rent through a private landlord, prices will
+							be higher. Shared accommodation costs between 600 and 1,200 Swiss Francs per person. Renting
+							an apartment alone in Zurich generally costs over 1,200 Swiss Francs, with better options
+							reaching over 3,000 Swiss Francs. For insurance, you can choose the Swisscare discount
+							exclusive to the ACSSZ, starting at 56 Swiss francs per month (for those aged 31 and
+							under). If you are new to the area and prefer a zero-deductible plan, you can opt for the
+							Academic Care zero-deductible package, though its costs are relatively higher (140 Swiss
+							francs per month for those aged 25 and under, and 250 Swiss francs per month for those aged
+							26 and above) Phone bills typically range from 20 to 35 Swiss Francs. The ACSSZ
+							offers an exclusive discount through Sunrise LEBARA, which is cheaper than market rates.
+							Transportation costs usually involve purchasing an annual pass for Zone 110. For those under
+							25, the annual cost is 570 Swiss Francs. Those who frequently travel in the evenings can
+							purchase the Night GA pass for 99 Swiss Francs per year, allowing unlimited travel in
+							GA-covered areas after 7 PM. Other expenses mainly involve grocery shopping. If you cook at
+							home most of the time, approximately 400 CHF per month for supermarket shopping is
+							sufficient. If your time is more valuable, eating at the cafeteria or takeout shops daily
+							averages 30–40 CHF per day. Occasional restaurant visits cost around 30–50 CHF per person.
+							Online purchases of skincare products and clothing can cost between 50 and 200 Swiss Francs,
+							though many students choose to buy everything in one go when they return home annually.
 						</Typography>
 					</AccordionDetails>
 				</Accordion>
@@ -105,14 +126,13 @@ export default function FAQ() {
 						id="panel4d-header"
 					>
 						<Typography component="span" variant="subtitle2">
-							Is there a warranty on the product, and what does it cover?
+							How to join ACSSZ?
 						</Typography>
 					</AccordionSummary>
 					<AccordionDetails>
 						<Typography variant="body2" gutterBottom sx={{ maxWidth: { sm: "100%", md: "70%" } }}>
-							Yes, our product comes with a [length of warranty] warranty. It covers defects in materials
-							and workmanship. If you encounter any issues covered by the warranty, please contact our
-							customer support for assistance.
+							If you would like to join us, please follow our announcements at the start of each autumn
+							semester.
 						</Typography>
 					</AccordionDetails>
 				</Accordion>

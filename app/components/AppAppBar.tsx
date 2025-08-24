@@ -57,19 +57,16 @@ export default function AppAppBar() {
 								Useful Information
 							</Button>
 							<Button variant="text" color="info" size="small">
-								Q&A for Freshmen
-							</Button>
-							<Button variant="text" color="info" size="small">
 								Event Notification
-							</Button>
-							<Button variant="text" color="info" size="small">
-								Event Review
 							</Button>
 							<Button variant="text" color="info" size="small">
 								Business Cooperation
 							</Button>
 							<Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}>
 								Membership Card
+							</Button>
+							<Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}>
+								Departments
 							</Button>
 							<Button variant="text" color="info" size="small" sx={{ minWidth: 0 }}>
 								About Us

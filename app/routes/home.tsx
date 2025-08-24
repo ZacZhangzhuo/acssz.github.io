@@ -5,10 +5,10 @@ import AppTheme from "../shared-theme/AppTheme.tsx";
 import AppAppBar from "../components/AppAppBar";
 import Hero from "../components/Hero";
 import LogoCollection from "../components/LogoCollection";
-import Highlights from "../components/Highlights";
+import Departments from "../components/Departments";
 import Manual from "../components/Manual";
 import Features from "../components/Features";
-import Testimonials from "../components/Testimonials";
+import Events from "../components/Events";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
 
@@ -30,16 +30,11 @@ export default function Home(props: { disableCustomTheme?: boolean } = { disable
 			<AppAppBar />
 			<Hero />
 			<div>
+				<Events />
+				<Departments />
 				<Manual />
 				<FAQ />
 				<LogoCollection />
-				<Features />
-				<Divider />
-				<Testimonials />
-				<Divider />
-				<Highlights />
-				<Divider />
-				<Divider />
 				<Divider />
 				<Footer />
 			</div>
