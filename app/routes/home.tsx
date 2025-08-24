@@ -7,7 +7,6 @@ import Hero from "../components/Hero";
 import LogoCollection from "../components/LogoCollection";
 import Departments from "../components/Departments";
 import Manual from "../components/Manual";
-import Features from "../components/Features";
 import Events from "../components/Events";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";

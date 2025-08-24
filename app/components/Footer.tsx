@@ -29,8 +29,8 @@ export default function Footer() {
 			<Typography component="h2" variant="h4">
 				Contact Us
 			</Typography>
-			<Grid container spacing={2} sx={{ alignSelf: "center" }}>
-				<img src="media/QRcode.jpg" style={{ width: "50%" }}></img>
+			<Grid container spacing={2} direction={"column"} sx={{ alignSelf: "center" }}>
+				<img src="media/QRcode.jpg" style={{ width: "50%", alignSelf: "center" }}></img>
 
 				<Stack
 					direction="row"
