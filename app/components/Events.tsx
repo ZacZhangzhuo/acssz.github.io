@@ -55,7 +55,7 @@ export default function Events() {
 		<Container
 			id="events"
 			sx={{
-				pt: { xs: 4, sm: 12 },
+				pt: { xs: 1, sm: 4 },
 				pb: { xs: 0, sm: 0 },
 				position: "relative",
 				display: "flex",
@@ -74,7 +74,9 @@ export default function Events() {
 					Events
 				</Typography>
 				<Typography variant="body1" sx={{ color: "text.secondary" }}>
-					ACSSZ organizes various events throughout the year to foster community engagement, cultural exchange, and professional development. From career insights to cultural talks, we aim to create a platform for students and scholars to connect and grow.
+					ACSSZ organizes various events throughout the year to foster community engagement, cultural
+					exchange, and professional development. From career insights to cultural talks, we aim to create a
+					platform for students and scholars to connect and grow.
 				</Typography>
 			</Box>
 			<Grid container spacing={2}>

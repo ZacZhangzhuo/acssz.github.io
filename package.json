@@ -1,36 +1,38 @@
 {
-  "name": "acssz-static",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "react-router build",
-    "dev": "react-router dev",
-    "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
-  },
-  "dependencies": {
-    "@emotion/cache": "latest",
-    "@emotion/react": "^11.14.0",
-    "@emotion/server": "latest",
-    "@emotion/styled": "^11.14.1",
-    "@mui/icons-material": "^7.3.1",
-    "@mui/material": "^7.3.1",
-    "@react-router/node": "latest",
-    "@react-router/serve": "latest",
-    "@vitejs/plugin-react": "^4.7.0",
-    "isbot": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "react-material-ui-carousel": "^3.4.2",
-    "react-router": "latest"
-  },
-  "devDependencies": {
-    "@react-router/dev": "latest",
-    "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "typescript": "latest",
-    "vite": "latest",
-    "vite-tsconfig-paths": "latest"
-  }
+	"name": "acssz-static",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "react-router build",
+		"dev": "react-router dev",
+		"start": "react-router-serve ./build/server/index.js",
+		"typecheck": "react-router typegen && tsc"
+	},
+	"dependencies": {
+		"@emotion/cache": "latest",
+		"@emotion/react": "^11.14.0",
+		"@emotion/server": "latest",
+		"@emotion/styled": "^11.14.1",
+		"@mui/icons-material": "^7.3.1",
+		"@mui/material": "^7.3.1",
+		"@react-router/node": "latest",
+		"@react-router/serve": "latest",
+		"@vitejs/plugin-react": "^4.7.0",
+		"embla-carousel": "^8.6.0",
+		"embla-carousel-auto-scroll": "^8.6.0",
+		"embla-carousel-react": "^8.6.0",
+		"isbot": "latest",
+		"react": "latest",
+		"react-dom": "latest",
+		"react-router": "latest"
+	},
+	"devDependencies": {
+		"@react-router/dev": "latest",
+		"@types/node": "latest",
+		"@types/react": "latest",
+		"@types/react-dom": "latest",
+		"typescript": "latest",
+		"vite": "latest",
+		"vite-tsconfig-paths": "latest"
+	}
 }

@@ -10,6 +10,8 @@ import Manual from "../components/Manual";
 import Events from "../components/Events";
 import FAQ from "../components/FAQ";
 import Footer from "../components/Footer";
+import "../css/base.css";
+import "../css/embla.css";
 
 export function meta() {
 	return [

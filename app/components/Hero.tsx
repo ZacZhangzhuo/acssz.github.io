@@ -2,8 +2,8 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import { styled } from "@mui/material/styles";
-import Carousel from "react-material-ui-carousel";
-import Paper from "@mui/material/Paper";
+import { EmblaOptionsType } from "embla-carousel";
+import Carousel from "./carousel/Carousel";
 
 const StyledBox = styled("div")<{ src: string }>(({ theme, src }) => ({
 	alignSelf: "center",
@@ -31,38 +31,17 @@ const StyledBox = styled("div")<{ src: string }>(({ theme, src }) => ({
 	}),
 }));
 
+const OPTIONS: EmblaOptionsType = { loop: true };
+const SLIDES = new Map<string, string>([
+	["Slide 1", "media/slider_food.jpeg"],
+	["Slide 2", "media/slider_erhu.jpeg"],
+	["Slide 3", "media/slider_hanfu.jpg"],
+	["Slide 4", "media/slider-china.jpg"],
+	["Slide 5", "media/slider_music.jpg"],
+]);
+
 function HeroImages() {
-	const items = [
-		{
-			imgSrc: "media/slider_food.jpeg",
-			title: "Slide 1",
-		},
-		{
-			imgSrc: "media/slider_erhu.jpeg",
-			title: "Slide 2",
-		},
-		{
-			imgSrc: "media/slider_hanfu.jpg",
-			title: "Slide 3",
-		},
-		{
-			imgSrc: "media/slider-china.jpg",
-			title: "Slide 4",
-		},
-		{
-			imgSrc: "media/slider_music.jpg",
-			title: "Slide 5",
-		},
-	];
-	return (
-		<Carousel>
-			{items.map((item, i) => (
-				<Paper>
-					<StyledBox src={item.imgSrc} id="image" />
-				</Paper>
-			))}
-		</Carousel>
-	);
+	return <Carousel slides={SLIDES} options={OPTIONS} />;
 }
 
 export default function Hero() {
@@ -77,11 +56,12 @@ export default function Hero() {
 				...theme.applyStyles("dark", {
 					backgroundImage: "radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 16%), transparent)",
 				}),
+				pt: { xs: 12, sm: 0 },
+				ml: { xs: 0, sm: 0 },
+				mr: { xs: 0, sm: 0 },
 			})}
 		>
-			<Container>
-				<HeroImages />
-			</Container>
+			<HeroImages />
 		</Box>
 	);
 }
